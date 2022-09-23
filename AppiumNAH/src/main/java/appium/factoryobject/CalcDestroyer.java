@@ -186,8 +186,25 @@ public class CalcDestroyer {
 	}
 	
 	public double getTxtResult() {
-		return Double.parseDouble(resultCalc.getText());
-	}
+//		Referensi = Mas Nanto
+// 		==================================================================
+//		char charMin = resultCalc.getText().charAt(0);
+//		int intMin = charMin;
+//		if(intMin == 8722) {			
+//			return Double.parseDouble(resultCalc.getText().replace("−", "-"));
+//		}
+// 		==================================================================
+		
+		Character charMin = resultCalc.getText().charAt(0);
+		int intMin = charMin;
+		Character replaceVal = 45;
+		if(intMin == 8722) {			
+			return Double.parseDouble(resultCalc.getText().replace(charMin.toString(), replaceVal.toString()));
+		}
+		else {
+			return Double.parseDouble(resultCalc.getText());
+		}
+	}	
 
 	public void clear() {
 		btnClear.click();

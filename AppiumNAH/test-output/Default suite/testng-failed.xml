@@ -5,7 +5,7 @@
     <classes>
       <class name="appium.runner.CalculatorDestroyerTwo">
         <methods>
-          <include name="testPost" invocation-numbers="0 2 3 4 5 6 7"/>
+          <include name="testPost" invocation-numbers="7"/>
           <include name="befTest"/>
         </methods>
       </class> <!-- appium.runner.CalculatorDestroyerTwo -->
